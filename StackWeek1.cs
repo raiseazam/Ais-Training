@@ -24,6 +24,8 @@ namespace StackWeek1
         }
         static void Main(string[] args)
         {
+            try
+            {
             Program obj = new Program();
             Stack<int> st = new Stack<int>();
 
@@ -71,9 +73,14 @@ namespace StackWeek1
                 else
                     continue;
             }
+            }
+            Catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
 
           
         }
     }
+}
 }
 

@@ -22,6 +22,8 @@ namespace SortInsertionWeek1
             }
             static void Main(string[] args)
             {
+                try
+                {
                 Program obj = new Program();
                 List<int> l = new List<int>();
                 Console.WriteLine("Enter Size :");
@@ -41,6 +43,11 @@ namespace SortInsertionWeek1
                 foreach (var element in l)
                 {
                     Console.Write(element + "   ");
+                }
+                }
+                catch(Exception e)
+                {
+                    Console.WriteLine(e.Message);
                 }
                 Console.ReadKey();
             }

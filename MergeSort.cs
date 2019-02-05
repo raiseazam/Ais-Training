@@ -50,6 +50,8 @@ namespace MergeSortWeek1
         }
             static void Main(string[] args)
         {
+                try
+                {
             MergeSort obj = new MergeSort();
             int[] A = { 23, 11, 45, 2, 67, 89, 32 };
 
@@ -64,6 +66,11 @@ namespace MergeSortWeek1
             {
                 Console.Write(element + "   ");
             }
+                }
+                Catch(Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
             Console.ReadKey();
         }
 

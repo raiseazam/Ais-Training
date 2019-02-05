@@ -67,7 +67,7 @@ namespace MergeSortWeek1
                 Console.Write(element + "   ");
             }
                 }
-                Catch(Exception e)
+                catch(Exception e)
                 {
                     Console.WriteLine(e.Message);
                 }

@@ -1,1 +1,8 @@
+1) For creating new Resource Group:
+az group create --name RG02 --location southcentralus
 
+2)For creating new VM in Our existing Resource Group:
+~$  az vm create --resource-group RG02 --name AisVM2  --image win2016datacenter --admin-username raiseazam --admin-password ais@12345678
+
+3)For creating storage account in our existing resource group:
+az storage account create --name raisestorage --resource-group RG02 --location  southcentralus --sku Standard_LRS --kind StorageV2

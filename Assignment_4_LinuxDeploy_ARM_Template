@@ -120,7 +120,20 @@
       "metadata": {
         "description": "Location for all resources."
       }
-    }
+    },
+	"diskSizeGB1":{
+	"type":"int",
+	"defaultValue":256,
+	"metadata":{
+	"description":"disk size in gb"
+	}
+  },
+  "diskSizeGB2":{
+	"type":"int",
+	"defaultValue":256,
+	"metadata":{
+	"description":"disk size in gb"
+	}
   },
   "variables": {
     "vnetID": "[resourceId(parameters('virtualNetworkResourceGroup'), 'Microsoft.Network/virtualNetworks', parameters('virtualNetworkName'))]",
@@ -200,12 +213,12 @@
           },
 		"dataDisks": [
                         {
-                            "diskSizeGB": "1024",
+                            "diskSizeGB": "[parameters('diskSizeGB1')]",
                             "lun": 0,
                             "createOption": "Empty"
                         },
                         {
-                            "diskSizeGB": "1024",
+                            "diskSizeGB": "[parameters('diskSizeGB2')]",
                             "lun": 1,
                             "createOption": "Empty"
                         }

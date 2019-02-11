@@ -78,6 +78,19 @@
         "description": "Image SKU"
       }
     },
+   "diskSizeGB1":{
+	"type":"int",
+	"defaultValue":256,
+	"metadata":{
+	"description":"disk size in gb"
+	}
+  },
+  "diskSizeGB2":{
+	"type":"int",
+	"defaultValue":256,
+	"metadata":{
+	"description":"disk size in gb"
+  },
     "adminUsername": {
       "type": "string",
       "metadata": {
